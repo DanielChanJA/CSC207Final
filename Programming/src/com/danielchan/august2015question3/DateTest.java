@@ -23,7 +23,6 @@ public class DateTest {
         dateList.add(d4);
         dateList.add(d5);
 
-
         Collections.sort(dateList, new Date.Comparators());
 
         System.out.println("Sorted List: " + dateList);

@@ -55,7 +55,7 @@ public class Table implements Iterable {
         }
 
         @Override
-        public void remove() {
+        public void remove() throws UnsupportedOperationException {
             throw new UnsupportedOperationException();
         }
     }

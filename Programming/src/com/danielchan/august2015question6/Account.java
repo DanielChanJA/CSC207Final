@@ -23,6 +23,7 @@ public class Account extends Observable implements Observer {
         numTweets++;
         this.setChanged();
         notifyObservers(s);
+        this.clearChanged();
     }
 
 

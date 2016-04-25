@@ -13,12 +13,18 @@ public class Table implements Iterable {
 
     @Override public Iterator iterator() {
 
-        return null;
+        return new TableIterator();
     }
 
     class TableIterator implements Iterator {
+
+        int xPos = 0;
+        int yPos = 0;
+
         @Override public boolean hasNext() {
-            return false;
+            if (contents[xPos][yPos] == null) {
+                return false;
+            }
         }
 
         @Override public Object next() {

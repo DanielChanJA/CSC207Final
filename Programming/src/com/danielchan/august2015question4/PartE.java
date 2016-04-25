@@ -13,7 +13,7 @@ public class PartE {
         int count = 0;
 
         Pattern pattern = Pattern.compile(regex);
-        
+
         for (String s : data) {
             Matcher matcher = pattern.matcher(s);
             if (matcher.find()) {

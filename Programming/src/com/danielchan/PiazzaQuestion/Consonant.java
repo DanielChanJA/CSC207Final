@@ -22,7 +22,7 @@ public class Consonant {
         return s;
     }
 
-    
+
     public static void main(String[] arg) {
 
         System.out.println(swapAround("string"));
